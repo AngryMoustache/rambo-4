@@ -1,0 +1,29 @@
+{
+  "name": "angry-moustache/rambo",
+  "description": "Windows style Livewire CMS",
+  "keywords": [],
+  "license": "MIT",
+  "require": {
+    "php": "^8.2",
+    "laravel/framework": "^10.0",
+    "livewire/livewire": "^2.0",
+    "angry-moustache/media": "dev-release/2.0 as 2.0.0"
+  },
+  "autoload": {
+    "files": [
+        "src/helpers.php"
+    ],
+    "psr-4": {
+      "AngryMoustache\\Rambo\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+        "providers": [
+            "AngryMoustache\\Rambo\\Providers\\RamboServiceProvider"
+        ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
